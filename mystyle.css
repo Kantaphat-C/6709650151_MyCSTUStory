@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');/*Walter Turncoat*/
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');/*Jersey 10*/
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');/* M PLLUS Code Latin*/
-body{
+#hmp{
     width: auto;
     min-width: 1500px;
     height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(186, 216, 241);
+    background-color: aliceblue;
+    overflow: auto;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+#myj{
+    width: auto;
+    min-width: 1500px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: radial-gradient(ellipse,rgb(235, 165, 165),white);
     overflow: auto;
     display: flex;
     flex-direction: column; /* Stack children vertically */
@@ -91,7 +103,7 @@ footer{
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     border-top: 4px double black;
-    padding-left: 3px;
+    padding-left: 20px;
     padding-top: 10px;
     margin-top: auto;
 }
@@ -164,12 +176,12 @@ td.center{
 .navi{
     background-color: rgb(24, 77, 20);
     height: 50vh;
+    width: 15%;
     margin-top: 20px;
     margin-left: 10px;
     color: white;
     overflow: hidden;
     position: relative;
-    width: 15%;
     text-align: center;
     padding-top: 10px;
     border:double 10px #d1d134;
@@ -232,7 +244,7 @@ nav ul li a:hover::before {
 /*--------------------End Sidebar----------------------------------*/
 /*-------------------header-My-Journey--------------------*/
 .headermyj{
-    background-color: rgb(242, 102, 80);
+    background-color: rgb(244, 163, 150);
     border-bottom: double 15px rgb(216, 55, 55);
     padding: 0;
     height: 100px;
@@ -253,13 +265,73 @@ nav ul li a:hover::before {
 }
 /*---------------------Content-Myj---------------------*/
 .mainmyj{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(222, 223, 222);
+    border: solid 10px rgb(232, 200, 95);
     border-radius: 8px;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin: 20px;
     width: 800px;
-    height: 80vh;
+    height: auto;
     float: right;
-    margin-left: 20px;
     flex-grow: 1;
+    justify-content: center;
+
+}
+.content-top{
+    background-color: rgb(189, 185, 185);
+    text-align: center;
+    margin: 0;
+}
+.studyList{
+    margin: 15px;
+    padding-left: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+.studyList h3{
+    background-color: #7d91f3b3;
+    width: auto;
+    margin: 0;
+    border-radius: 8px;
+    padding: 5px;
+}
+.course{
+    display: flex;
+    margin: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: white;
+    height: auto;
+}
+.content-course{
+    flex: 1; /* Allows content-course to take available space */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start;/* Align children to the start of the container */
+}
+.content-course h4{
+    background-color: rgb(168, 197, 226);
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 0;
+    display: inline-block;
+    width: auto;
+}
+.content-course p{
+    /*background-color: rgb(228, 231, 234);*/
+    background: radial-gradient(circle,rgb(255, 255, 255),rgb(198, 198, 198));
+    border: solid 1px black;
+    border-radius: 8px;
+    padding: 10px;
+    height: 100%;
+    width: auto;
+}
+.content-pict{
+    float: right;
+    padding: 10px;
+    padding-left: 30%;
+}
+#course-pic{
+    border-radius: 8px;
+    width: 220px;
+    height: 150px;
 }
