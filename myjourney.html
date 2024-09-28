@@ -6,15 +6,26 @@
     <link rel="stylesheet" href="mystyle.css">
     <title>My journey</title>
 </head>
-<body id="myj">
-    <header class="headermy">
-        <h1>My journey</h1>
+<body>
+    <header class="headerbody">
+        <div class="hmpgrect">
+            <h1><img class="iconh1"  src="resources/journey.png"> My Journey </h1>
+        </div>
+        <div id="centertopright"></div>
+            <nav class="navinline">
+                <ul>
+                    <li><img class="icon" src="resources/home-variant.png">  <a href="index.html"><b>Homepage</b></a></li>
+                    <li><img class="icon" src="resources/journey.png">  <a href="myjourney.html"><b>My Journey</b></a></li>
+                    <li><img class="icon" src="resources/future-technology.png">  <a href="myfuture.html"><b>My Future</b></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <div class="contentmy-container">
         <!--Sidebar-->
         <div class="navi">
-            <span><b>!-Page-!</b></span>
+            <span><b>Page</b></span>
             <hr color="black">
             <nav>
                 <ul>
@@ -23,7 +34,9 @@
                     <li><a href="myfuture.html">My Future</a></li>
                 </ul>
             </nav>
-            <img id="like" src="resources/like.png">
+            <div class="like">
+                <img src="resources/like.png">
+            </div>
         </div>
         <!--End Sidebar, Start Content-->
         <main class="mainmy">
