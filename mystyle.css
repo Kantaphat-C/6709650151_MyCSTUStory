@@ -88,7 +88,7 @@ footer{
     justify-content: center;
     
 }
-table{
+.tableindex{
     width: 900px;
     height: 300px;
     border-collapse: collapse; /* Merge borders */
@@ -143,8 +143,8 @@ td.center{
 /*navi*/
 
 .like img{
-    width: 200px;
-    height: 150px;
+    width: 160px;
+    height: 120px;
 }
 .navi{
     background-color: #E8C5E5;
@@ -157,7 +157,6 @@ td.center{
     position: relative;
     text-align: center;
     padding-top: 10px;
-    border:double 10px #0c4e22;
     border-radius: 8px;
     box-sizing: border-box;
     float: left;
@@ -221,8 +220,7 @@ nav ul li a:hover::before {
 }
 /*---------------------Content-Myj---------------------*/
 .mainmy{
-    background-color: #91DDCF;
-    border: solid 5px #0c4e22;
+    background-color: #ffffff;
     border-radius: 8px;
     margin: 20px;
     width: 800px;
@@ -231,75 +229,54 @@ nav ul li a:hover::before {
     flex-grow: 1;
     justify-content: center;
     box-shadow: 0px -5px 35px -3px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+
 }
-.content-top{
-    background-color: #F19ED2;
+.bgmyj{
+    background-image: url('resources/tree_growth.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    width: 1100px;
+    height: 550px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 0;
-    font-family: 'Inter';
+    margin-left: 120px;
 }
-.studyList{
-    margin: 15px;
-    padding-left: 25px;
-    display: flex;
-    align-items: flex-start;
+.container{
+    padding: 0;
 }
-.studyList h3{
-    font-family: 'Inter';
-    background-color: #F19ED2;
-    width: auto;
-    margin: 0;
-    border-radius: 8px;
-    padding: 5px;
-}
-.course{
-    display: flex;
-    margin: 15px;
-    padding-left: 15px;
-    border-radius: 10px;
-    background-color: #F7F9F2;
+/*------------------Table below tree-------------*/
+.treetable{
+    width: 100%;
     height: auto;
+    border: transparent;
+    border-spacing: 20px;
 }
-.content-course{
-    flex: 1; /* Allows content-course to take available space */
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: flex-start;/* Align children to the start of the container */
+.treetable tr{
+    border: transparent;
+    
+}
+.treetable tr td{
+    background-color: transparent;
+    box-shadow: 11px 9px 23px 0px rgba(0,0,0,0.22);
+    border: transparent;
+    margin: 10px;
+    text-align: left;
+    flex-direction: column;
+    width: 200px;
+    font-family: 'Inter';
+    color: #ffffff;
+    vertical-align: top;
+}
+.treetable tr td h1{
+    text-align: left;
     font-family: 'Inter';
 }
-.content-course h4{
-    background-color: #E8C5E5;
-    border-radius: 8px;
-    padding: 5px;
-    margin-bottom: 0;
-    display: inline-block;
-    width: auto;
-}
-.content-course p{
-    font-family: 'Inter';
-    background-color: white;
-    border: solid 1px rgb(222, 222, 222);
-    border-radius: 8px;
-    padding: 10px;
-    height: 100%;
-    width: auto;
-}
-.content-pict{
-    float: right;
-    padding: 10px;
-    padding-left: 30%;
-}
-#course-pic{
-    border-radius: 8px;
-    width: 220px;
-    height: 150px;
-}
-.content-pict p{
-    margin-top: 3px;
-}
-.content-pict p a{
-    text-decoration: none;
-}
+
 /*--------------End-Content-for-My-journey-------------*/
 .headContentmyf{
     background-color: #F7F9F2;
